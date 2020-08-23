@@ -1,0 +1,26 @@
+# LibMPEG-2 K:OS Makefile
+# (C) PH3NOM 2010
+
+KOS_CFLAGS += -I. -I../include
+
+TARGET = libmpeg2.a 
+
+OBJS += alloc.o
+OBJS += cpu_accel.o
+OBJS += cpu_state.o
+OBJS += decode.o
+OBJS += header.o
+OBJS += idct.o
+OBJS += idct_alpha.o
+OBJS += idct_altivec.o
+OBJS += idct_mmx.o
+OBJS += motion_comp.o
+OBJS += motion_comp_alpha.o
+OBJS += motion_comp_altivec.o
+OBJS += motion_comp_arm.o
+OBJS += motion_comp_mmx.o
+OBJS += motion_comp_vis.o
+OBJS += slice.o
+OBJS += convert/rgb.o
+OBJS += convert/uyvy.o
+include $(KOS_BASE)/addons/Makefile.prefab 
